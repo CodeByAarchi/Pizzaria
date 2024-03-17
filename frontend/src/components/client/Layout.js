@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../client/Header/Header';
-import NewsletterForm from './NewsLatter/NewsLatter';
+import NewsletterForm from './Login/NewsLatter/NewsLatter';
 import Footer from './Footer/Footer';
 
 const Layout = ({ children }) => {

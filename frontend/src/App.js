@@ -6,7 +6,7 @@ import ForgotPasswordForm from './components/client/ForgotPassword/ForgotPasswor
 import OTPVerificationForm from './components/client/OTPVerification/OTPVerification';
 import PasswordResetForm from './components/client/ResetPassword/ResetPassword';
 import Home from './pages/client/Home/Home';
-import NewsletterForm from './components/client/NewsLatter/NewsLatter';
+import NewsletterForm from './components/client/Login/NewsLatter/NewsLatter';
 import Footer from './components/client/Footer/Footer';
 import Gallery from './pages/client/Gallary/Gallary';
 import ContactForm from './pages/client/Contact_Us/Contact_Us';

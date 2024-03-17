@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './NewsLatter.css';
-import newsImg from '../../../assets/news.jpg';
+import newsImg from '../../../../assets/news.jpg';
 
 const NewsletterForm = () => {
     const [email, setEmail] = useState('');

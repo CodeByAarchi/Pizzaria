@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility;
+    background: #f3f3f5;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.redirect-icon-3 i {
+    position: absolute;
+    top: 40px;
+    right: 225px;
+    cursor: pointer;
+    color: #333 !important;
+    font-size: large;
+}
+
+.order-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: -400px;
+}
+
+.order-detail-box {
+    background: linear-gradient(145deg, #dcdcdc, #ffffff);
+    box-shadow: inset 8px 8px 12px #e2e2e2, inset -8px -8px 12px #ffffff;
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.left-part,
+.right-part {
+    flex: 1;
+    padding: 50px;
+}
+
+.left-part {
+    border-right: 1px solid #ccc;
+}
+
+.product-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.product-item img {
+    width: 120px;
+    height: 120px;
+    margin-right: 25px;
+}
+
+.product-details-order {
+    margin-top: 10px;
+}
+
+.product-details-order p {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.order-summary {
+    margin-top: 10px;
+}
+
+.order-summary h2 {
+    margin-bottom: 10px;
+}
+
+.order-summary p {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    margin-left: 130px;
+    color: #ff8243;
+
+
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.detail-value {
+    color: #555;
+}
+
+.subtotal,
+.total {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.right-part form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.right-part textarea {
+    margin-bottom: 20px;
+    padding: 8px;
+    background-color: #f9f8f8;
+    border: none;
+    font-size: 1rem;
+    width: 22em;
+    border-radius: 5px;
+    color: #ff8243;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+.right-part textarea:focus {
+    outline-color: #ff8243;
+}
+
+.right-part input {
+    margin-bottom: 20px;
+    padding: 8px;
+    background-color: #f9f8f8;
+    border: none;
+    font-size: 1rem;
+    width: 22em;
+    border-radius: 5px;
+    color: #ff8243;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+.right-part input:focus {
+    outline-color: #ff8243;
+}
+
+.right-part button {
+    padding: 8px 20px;
+    background-color: #ff8243;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    font-size: large;
+    margin-bottom: -29px;
+}
+
+.right-part button:hover {
+    background-color: #ff6b00;
+}
+
+
+input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+textarea:focus {
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+}
+
+.heading-order {
+    margin-bottom: 20px;
+    text-align: center;
+}

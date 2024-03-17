@@ -1,0 +1,130 @@
+/* Payment.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility;
+    background: #f3f3f5;
+
+}
+
+.payment-container-all {
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.payment-container {
+    max-width: 450px;
+    margin: 150px;
+    margin-top: -450px;
+    margin-left: 600px;
+    margin-bottom: -300px;
+    padding: 40px;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #dcdcdc, #ffffff);
+    box-shadow: inset 8px 8px 12px #e2e2e2, inset -8px -8px 12px #ffffff;
+
+}
+
+.half-width {
+    display: flex;
+}
+
+.half-width input[type="date"] {
+    width: 100px;
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+.half-width input[type="text"] {
+    width: 60px;
+    padding-left: 5px;
+    margin-top: 0;
+
+}
+
+.payment-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.payment-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-container div {
+    margin-bottom: 10px;
+}
+
+.payment-container label {
+    font-weight: bold;
+}
+
+/* Set the color for the round circle (radio button) */
+.payment-container input[type="radio"] {
+    appearance: none;
+    /* Remove default appearance */
+    -webkit-appearance: none;
+    /* Remove default appearance for webkit browsers */
+    -moz-appearance: none;
+    /* Remove default appearance for Firefox */
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 2px solid #ff8243;
+    /* Set border color */
+    outline: none;
+    margin-right: 5px;
+}
+
+/* Set the color for the round circle (radio button) when checked */
+.payment-container input[type="radio"]:checked {
+    background-color: #ff8243;
+    /* Set background color when checked */
+}
+
+/* Set the color for the label */
+.payment-container input[type="radio"]+label {
+    color: #ff8243;
+    /* Set text color */
+}
+
+.payment-container input[type="email"],
+.payment-container input[type="text"],
+.payment-container input[type="date"] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    background-color: #f9f8f8;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: #ff8243;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+.payment-container button[type="submit"] {
+    padding: 8px 20px;
+    width: 100%;
+    background-color: #ff8243;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.payment-container button[type="submit"]:hover {
+    background-color: #ff6b00;
+}

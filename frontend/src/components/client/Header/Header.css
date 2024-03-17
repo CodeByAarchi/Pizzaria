@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility;
+    background: #f3f3f5;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f3f3f5;
+    padding: 15px 7%;
+    overflow-x: hidden;
+}
+
+.logo {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin: 0;
+}
+
+ul li a {
+    cursor: pointer;
+    display: flex;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+    color: #0d0d25b0;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+
+ul li a.active:hover {
+    color: #ff8243;
+    background: #f3f3f3;
+    box-shadow: inset 8px 8px 12px #e2e2e2, inset -8px -8px 12px #ffffff;
+}
+
+.header-right {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 18px;
+    background-color: transparent;
+    color: #ff8243;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+    box-shadow: inset 6px 6px 7px #dadada, inset -6px -6px 7px #ffffff;
+    transition: 0.3s;
+}
+
+.header-btn:hover {
+    background: linear-gradient(145deg, #dcdcdc, #ffffff);
+    box-shadow: inset 8px 8px 12px #e2e2e2, inset -8px -8px 12px #ffffff;
+}
+
+.cart-number {
+    position: absolute;
+    top: 2px;
+    right: 390px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #ffffff;
+    font-size: 12px;
+    border: 1px solid #bfbfbf;
+    color: #ff8243;
+}
+
+
+.uil {
+    color: #ff8243;
+    font-weight: 600;
+    font-size: 16px;
+}

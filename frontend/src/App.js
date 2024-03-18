@@ -16,14 +16,15 @@ import ProductDetails from './pages/client/ProductDetails/ProductDetails';
 import AddToCartPage from './pages/client/Cart/Cart';
 import OrderDetailPage from './pages/client/OrderDetails/OrderDetails';
 import PaymentPage from './pages/client/Payment/Payment';
-// import LoginAdmin from './components/client/Admin_Login/Admin_Login';
+import LoginAdmin from './components/admin/LoginAdmin/AdminLogin';
+import Dashboard from './components/admin/Dashboard/Dashboard';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path='/forgotpassword' element={<ForgotPasswordForm />} />
           <Route path='/otpverification' element={<OTPVerificationForm />} />
@@ -40,7 +41,7 @@ function App() {
           <Route path='/cart' element={<AddToCartPage />} />
           <Route path='/order' element={<OrderDetailPage />} />
           <Route path='/pay' element={<PaymentPage />} />
-          {/* <Route path='/' element={<LoginAdmin />} /> */}
+          <Route path='/adminlogin' element={<LoginAdmin />} />
         </Routes>
       </div>
     </Router>

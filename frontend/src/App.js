@@ -24,7 +24,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<Home/>} />
           <Route path="/login" element={<LoginForm />} />
           <Route path='/forgotpassword' element={<ForgotPasswordForm />} />
           <Route path='/otpverification' element={<OTPVerificationForm />} />
@@ -42,10 +42,10 @@ function App() {
           <Route path='/order' element={<OrderDetailPage />} />
           <Route path='/pay' element={<PaymentPage />} />
           <Route path='/adminlogin' element={<LoginAdmin />} />
+          {/* <Route path='/dashboard' element={<Dashboard />} /> */}
         </Routes>
       </div>
     </Router>
   );
 }
-
 export default App;

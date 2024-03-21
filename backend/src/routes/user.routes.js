@@ -1,12 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const { signUp, login, forgotPassword, verifyOTP, resetPassword } = require("../controllers/user.controller");
+const { signUp, login, forgotPassword, verifyOTP, resetPassword, ShowUsers, DeleteUser } = require("../controllers/user.controller");
 
 // Secure routes
-router.route("/signup").post(signUp);
-router.route("/login").post(login);
-router.route("/forgotpassword").post(forgotPassword);
-router.route("/verify-otp").post(verifyOTP);
-router.route("/resetpassword").post(resetPassword);
+router.post("/signup", signUp);
+router.post("/login", login);
+router.post("/forgotpassword", forgotPassword);
+router.post("/verify-otp", verifyOTP);
+router.post("/resetpassword", resetPassword);
+router.get("/showusers", ShowUsers);
+router.delete("/deleteuser/:userId", DeleteUser); // Include userId as a parameter
 
 module.exports = router;

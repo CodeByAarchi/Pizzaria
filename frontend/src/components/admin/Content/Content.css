@@ -1,12 +1,14 @@
-.content{
+.content {
     width: 75%;
 }
-.content-header{
+
+.content-header {
     display: flex;
     align-items: left;
     justify-content: space-between;
     padding-top: 0x;
 }
-.header-title{
+
+.header-title {
     color: #526d82;
 }

@@ -218,5 +218,48 @@ const resetPassword = async (req, res) => {
         });
     }
 };
+const ShowUsers = async (req, res) => {
+    try {
+        const users = await User.find({}, '-password');
+        res.json({
+            success: true,
+            users: users
+        });
+    } catch (error) {
+        return res.json({
+            success: false,
+            message: error.message
+        });
+    }
+}
 
-module.exports = { signUp, login, forgotPassword, verifyOTP, resetPassword };
+const DeleteUser = async (req, res) => {
+    try {
+        const userId = req.params.userId;
+
+        // Check if user exists
+        const user = await User.findById(userId);
+        if (!user) {
+            return res.json({
+                success: false,
+                message: 'User not found.'
+            });
+        }
+
+        // Delete the user
+        await User.findByIdAndDelete(userId);
+
+        return res.json({
+            success: true,
+            message: 'User deleted successfully.'
+        });
+    } catch (error) {
+        console.error('Error deleting user:', error);
+        return res.json({
+            success: false,
+            message: 'Something went wrong. Please try again later.'
+        });
+    }
+};
+
+module.exports = { signUp, login, forgotPassword, verifyOTP, resetPassword, ShowUsers, DeleteUser }; 

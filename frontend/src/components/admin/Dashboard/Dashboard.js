@@ -9,6 +9,7 @@ const Dashboard = () => {
                 <Sidebar />
                 <div className='dashboard-content'>
                     <Content />
+
                 </div>
             </div>
         </div>
